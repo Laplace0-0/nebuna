@@ -21,7 +21,7 @@ function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full border-b border-gray-900 backdrop-blur-lg">
+    <header className="fixed z-50 top-0 left-0 w-full border-b border-gray-900 backdrop-blur-lg">
       <div className="flex items-center justify-around py-4 px-32">
         <div className="flex items-center gap-2 justify-between">
           <Link
