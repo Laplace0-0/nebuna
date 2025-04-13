@@ -22,7 +22,7 @@ Crafted with clean UI, deep space aesthetics, and high-performance tooling.
   Powered by Redis & Angel One APIs for snappy execution.
 
 - 🧪 **Built-in Technical Indicators**  
-  EMAs, VWAP, RSI, MACD, and more (customizable soon).
+  EMAs, VWAP, RSI, MACD, and more.
 
 - 🛠️ **Full Stack Ready**  
   Built using Next.js, TailwindCSS, XataDB, Redis, and more.
