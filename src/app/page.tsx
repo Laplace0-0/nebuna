@@ -11,7 +11,7 @@ function Page() {
   return (
     <>
       <StarsBackground />
-      <Header />
+      <Header showLogo={true} />
       <HeroCTA />
       <div className="flex justify-center items-center h-full mt-14">
         <motion.div
@@ -25,7 +25,7 @@ function Page() {
           }}
         >
           {/* Shadow element */}
-          <div className="absolute inset-0 bg-[#0C3132]/45 blur-3xl -z-10 scale-105"></div>
+          <div className="absolute inset-0 bg-[#0C3132]/40 blur-3xl -z-10 scale-105"></div>
 
           {/* Animated Image */}
           <motion.div

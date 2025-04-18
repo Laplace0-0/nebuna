@@ -3,6 +3,7 @@ import React from "react";
 import { Archivo_Black } from "next/font/google";
 import { IoIosArrowForward } from "react-icons/io";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const archivoBlack = Archivo_Black({
   subsets: ["latin"],
@@ -18,6 +19,8 @@ function HeroCTA() {
       transition: { staggerChildren: 0.12, delayChildren: 0.04 },
     },
   };
+
+  const router = useRouter();
 
   const child = {
     visible: {
@@ -119,7 +122,10 @@ function HeroCTA() {
         whileHover="hover"
         whileTap="tap"
       >
-        <button className="cursor-pointer text-black rounded-xl h-full w-full flex items-center justify-center space-x-2">
+        <button
+          className="cursor-pointer text-black rounded-xl h-full w-full flex items-center justify-center space-x-2"
+          onClick={() => router.push("/signup")}
+        >
           Get Started
           <IoIosArrowForward className="ml-2" />
         </button>
