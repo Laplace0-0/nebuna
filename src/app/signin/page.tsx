@@ -38,14 +38,13 @@ export default function Signin() {
           }),
         });
 
-        const data = await response.json();
-
         if (!response.ok) {
           return;
         }
 
         router.push("/dashboard");
       } catch (err) {
+        console.log(err);
       } finally {
         setIsSubmitting(false);
       }
