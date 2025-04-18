@@ -6,7 +6,6 @@ import { FiEye, FiEyeOff } from "react-icons/fi";
 import { FcGoogle } from "react-icons/fc";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import StarsBackground from "@/components/StarsBackground";
 import Header from "@/components/Header";
 
 const signinSchema = Yup.object().shape({
