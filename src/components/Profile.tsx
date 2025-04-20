@@ -52,7 +52,8 @@ function Profile() {
             className="rounded-full"
           />
         </div>
-        <div className="flex flex-col min-w-0 justify-center">
+
+        <div className="flex flex-col min-w-0 justify-center flex-grow">
           <p className="text-md font-bold truncate leading-tight">
             {session?.user?.name || "Guest"}
           </p>
@@ -60,13 +61,13 @@ function Profile() {
             {session?.user?.email || "No email available"}
           </p>
         </div>
-        <div>
+
+        <div className="ml-auto">
           <Image
             src="/unfold_more.svg"
             alt="Arrow Down"
             width={25}
             height={25}
-            className="ml-2"
           />
         </div>
       </div>
