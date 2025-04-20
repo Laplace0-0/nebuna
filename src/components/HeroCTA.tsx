@@ -115,7 +115,7 @@ function HeroCTA() {
 
       {/* Animated Button */}
       <motion.div
-        className="flex rounded-lg h-10 px-3 font-medium items-center justify-center p-[1px] bg-gray-200 hover:bg-white mt-8"
+        className="flex rounded-lg h-10 px-3 font-medium items-center justify-center p-[1px] mt-8"
         variants={buttonVariants}
         initial="hidden"
         animate="visible"
@@ -123,7 +123,8 @@ function HeroCTA() {
         whileTap="tap"
       >
         <button
-          className="cursor-pointer text-black rounded-xl h-full w-full flex items-center justify-center space-x-2"
+          className="cursor-pointer text-white rounded-full px-4 py-4 shadow-xl
+ border border-zinc-700 h-full w-full flex items-center justify-center space-x-2"
           onClick={() => router.push("/signup")}
         >
           Get Started

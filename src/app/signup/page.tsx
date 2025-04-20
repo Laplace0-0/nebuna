@@ -7,6 +7,7 @@ import { FcGoogle } from "react-icons/fc";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Header from "@/components/Header";
+import { signIn } from "next-auth/react";
 
 const signupSchema = Yup.object().shape({
   email: Yup.string().email("Invalid email").required("Email is required"),
@@ -151,7 +152,15 @@ export default function Signup() {
             <hr className="flex-grow border-gray-600" />
           </div>
 
-          <button className="w-full flex items-center justify-center gap-2 p-3 border border-gray-600 rounded-md hover:bg-gray-800 transition cursor-pointer">
+          <button
+            className="w-full flex items-center justify-center gap-2 p-3 border border-gray-600 rounded-md hover:bg-gray-800 transition cursor-pointer"
+            onClick={() =>
+              signIn("google", {
+                redirect: true,
+                callbackUrl: "/dashboard",
+              })
+            }
+          >
             <FcGoogle className="text-xl" /> Continue with Google
           </button>
 
