@@ -17,7 +17,7 @@ export const authOptions: NextAuthOptions = {
     maxAge: 30 * 24 * 60 * 60, // 30 days
   },
   callbacks: {
-    async signIn({ user, account, profile }) {
+    async signIn({ user }) {
       try {
         const existingUser = await xata.db.nextauth_users
           .filter({ email: user.email })
