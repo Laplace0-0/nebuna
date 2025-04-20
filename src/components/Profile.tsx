@@ -32,11 +32,11 @@ function Profile() {
   }, []);
 
   return (
-    <div className="relative flex items-center ml-1 mr-1 pb-2">
+    <div className="relative flex items-center justify-between ml-1 mr-1 pb-2 ">
       {/* Profile Button */}
       <div
         ref={buttonRef}
-        className="flex items-center gap-2 p-2 rounded-xl cursor-pointer hover:bg-zinc-800 transition-colors duration-200"
+        className="flex items-center w-full gap-2 p-2 rounded-xl cursor-pointer hover:bg-zinc-800 transition-colors duration-200"
         onClick={toggleWindow}
       >
         <div className="pl-1">
@@ -62,7 +62,7 @@ function Profile() {
           </p>
         </div>
 
-        <div className="ml-auto">
+        <div>
           <Image
             src="/unfold_more.svg"
             alt="Arrow Down"
