@@ -55,7 +55,7 @@ export const authOptions: NextAuthOptions = {
     newUser: "/signup",
   },
   secret: process.env.NEXTAUTH_SECRET,
-  debug: process.env.NODE_ENV === "development",
+  debug: true,
 };
 
 export const auth = () => getServerSession(authOptions);
